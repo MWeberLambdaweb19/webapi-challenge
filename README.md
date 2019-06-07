@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+Router, which allows us to route our app through various endpoints and imported files, and 'use', which allows us to connect our other files to our server.js, as well as us json.
+
 - [ ] Describe Middleware?
+
+Middleware in the backend is a lot like middleware in Redux. Our request is first sent through the middleware to be processed. Whatever action we want to take place in the middleware will take place on our request, and then it will either be successful and move onto the next step (our request is sent through to the endpoint we originally sent) or fail and cancel the action.
 
 - [ ] Describe a Resource?
 
+A resource is a set of data that we are CRUDing from our API.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+The API can return a status code, like 404 (not found) or 500 (internal error), as well as a console log or some json (if using an app like Insomnia or Postman).
+
 - [ ] How can we partition our application into sub-applications?
+
+We can split our files by the different types of requests per different types of data to partition our application. What this means: In this sprint, we have two sets of data, one from 'projects', and one from 'actions'; We can create two separate files that both have CRUD operations that stem from each separate set of data. This keeps our code clean and allows us to manipulate either set of data individually. 
 
 ## Project Setup
 
